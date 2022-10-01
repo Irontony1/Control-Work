@@ -3,17 +3,17 @@
 //выполнения алгоритма.  
 
 
-string[] SortArrayByChar(string[] imputArray, int limitChar)
+string[] SortArrayByChar(string[] inputArray, int limitChar)
 {   
-    int sizeArray = imputArray.Length;
+    int sizeArray = inputArray.Length;
     string[] tmpArray = new string[sizeArray];
     int counter = 0;
     for (int i = 0; i < sizeArray; i++)
     {   
-        int sizeRow = imputArray[i].Length;
+        int sizeRow = inputArray[i].Length;
         if (sizeRow <= limitChar)
         {
-            tmpArray[counter] = imputArray[i];
+            tmpArray[counter] = inputArray[i];
             counter++;
         }   
     }
